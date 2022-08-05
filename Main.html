@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' href= 'style.css'>
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div class = "wrapper">
+		<!-- Navigation -->
+		<nav>
+			
+			<div class="topnav">
+				
+				<ul class="nav" >
+					<strong>
+						<a href="About Us.html">&nbsp ABOUT US &nbsp</a>
+						<a href="Locations.html">&nbsp LOCATION &nbsp</a>
+					<a href="Main.html">&nbsp EXPLORE </a> </strong>
+					<h2>
+						THE CHILDREN'S GALLERY
+					</h2>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Slide Show -->
+		<div class= "slides">
+		<section>
+			<img class="mySlides" src="https://epcmuseum.org/wp-content/uploads/2019/02/EPCM-LOGO-REV2.png"
+				 alt="libriary" width="100%" height="600">
+			<img class="mySlides" src="slide1.jpg"
+				 alt="libriary" width="100%" height="600">
+			<img class="mySlides" src="slide2.jpg"
+				 alt="libriary" width="100%" height="600">
+			<img class="mySlides" src="slide3.jpg"
+				 alt="libriary" width="100%" height="600">
+            <img class="mySlides" src="slide4.jpg"
+				 alt="libriary" width="100%" height="600">  
+		</section>
+		</div>
+		<!-- Discription -->
+		<div class="description1">
+		
+	
+			<center><h2> THE GALLERY </h2></center>
+			<p> Children's Gallery is an educational gallery that aims to help children with their needs
+			and interests by rendering shows and programs. These programs may encourage them to have fun 
+			while learning. Fun is what kids always enjoys so if you can make them do what they don't want
+			to do, with fun, then it's a bonus. They learn leadership skills, team 
+			spirit, self-confidence, and communication throught most of the programs. 
+			That's why, Children's Gallery offers programs that include
+			fun activities and stories in them to create child interest. </p>
+			
+		</div>
+
+
+			
+		
+
+		
+			<div class = "tablewrapper">
+				<center><h2 style="padding:1em;">WHAT WE OFFER</h2> </center>
+                <table class = tableactivities>
+                    <tr>
+                        <td class= "playground">
+                            <img src="playground.jpg" width="500px" height="300px">
+                        </td>
+                        <td>
+							<h3>PLAYGROUND</h3>
+                            <p>Playground doesn't just promote flexibility and blance but also it develops
+								child's motor skills and coordination. It serves as a place to express
+								themselves and communicate, freely.
+							</p>
+                        </td>
+                    </tr>
+
+
+					<tr>
+                        <td class= "painting">
+							<h3>PAINTING</h3>
+							<p>Painting can help children express their feelings and emotions, convey ideas, explore
+								their style, use senses and exercise their creativity. 
+							</p>
+                        </td>
+                        <td>
+							<img src="painting.jpg" width="500px" height="300px">
+                           
+                        </td>
+                    </tr>
+
+
+					<tr>
+                        <td class= "storytelling">
+							<img src="storytelling.jpg" width="500px" height="300px">
+							
+                        </td>
+                        <td>
+							<h3>STORYTELLING SESSIONS</h3>
+							
+							<p>Painting can help children express their feelings and emotions, convey ideas, explore
+								their style, use senses and exercise their creativity. 
+							</p>
+                           
+                        </td>
+                    </tr>
+
+					
+					<tr>
+						
+                        <td>							
+							<img src="services_cognitive.jpg" width="50%">                        
+                        </td>
+						<td>							
+							<img src="services_literacy.jpg" width="50%">                        
+                        </td>
+                    </tr>
+					<td>							
+						<img src="services_literacy.jpg" width="50%">                        
+					</td>
+                </table>
+            </div>
+
+
+	
+		
+	
+		
+		<div class= "footer">
+                
+			<hr style="height:1px;border-width:0;background-color: #ffffff67;">
+			<br>
+			<center>&copy <br> THE CHILDREN'S GALLERY CO. <br>thechildrensgallery@gmail.com </center>
+			
+			
+			<br><br>
+			
+		</div>
+
+</div>
+		<script>
+			// Automatic Slideshow - change image every 3 seconds
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length) { myIndex = 1 }
+				x[myIndex - 1].style.display = "block";
+				setTimeout(carousel, 3000);
+			}
+		</script>
+
+	</body>
+</html>
